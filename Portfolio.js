@@ -26,7 +26,7 @@ export const about ={
 
 export const cards = [
     {
-        image: "./src/Assets/Rode_Image.png",
+        image: "https://imgur.com/H9wDZjF",
         title: "Rode Landing Page UI Clone",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit ",
         liveLink: "",
@@ -34,45 +34,13 @@ export const cards = [
         icons: ["icon-[skill-icons--css]","icon-[skill-icons--tailwindcss-dark]"]
     },
     {
-        image: "./src/Assets/Shopify_Image.png",
+        image: "https://imgur.com/hix2kvH",
         title: "Shopify Landing Page UI Clone",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit ",
         liveLink: "",
         gitLink: "",
         icons: ["icon-[skill-icons--html]","icon-[skill-icons--css]","icon-[skill-icons--tailwindcss-dark]"]
     },
-    // {
-    //     image: "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg",
-    //     title: "Card 3",
-    //     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit accusantium dolores nihil delectus temporarecusandae quaerat. Alias inventore est non laborum officiis nobisex quis quidem? Harum, doloremque animi!",
-    //     liveLink: "",
-    //     gitLink: "",
-    //     icons: ["icon-[skill-icons--html]","icon-[skill-icons--css]"]
-    // },
-    // {
-    //     image: "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg",
-    //     title: "Card 4",
-    //     description: "Card 4 Description",
-    //     liveLink: "",
-    //     gitLink: "",
-    //     icons: []
-    // },
-    // {
-    //     image: "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg",
-    //     title: "Card 5",
-    //     description: "Card 5 Description",
-    //     liveLink: "",
-    //     gitLink: "",
-    //     icons: []
-    // },
-    // {
-    //     image: "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg",
-    //     title: "Card 6",
-    //     description: "Card 6 Description",
-    //     liveLink: "",
-    //     gitLink: "",
-    //     icons: []
-    // }
 ];
 
 export const contact ={

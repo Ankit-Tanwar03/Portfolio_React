@@ -13,7 +13,6 @@ function App() {
       <About />
       <Projects />
       <Contact />
-      {/* <h1 className="bg-gray-800 text-white">Hello</h1> */}
     </>
   );
 }
