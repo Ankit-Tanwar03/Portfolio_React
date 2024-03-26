@@ -15,7 +15,7 @@ function Cards({ image, title, description, liveLink, gitLink, icons }) {
           <div className="flex flex-wrap">
             <h2 className="mr-2">Technologies:</h2>
             {icons.map((icon, index) => (
-              <span key={index} className={`${icon} mr-1 mt-1 w-7 h-7`}></span>
+              <span key={index} className={`.${icon} mr-1 mt-1 w-7 h-7`}></span>
             ))}
           </div>
         </div>

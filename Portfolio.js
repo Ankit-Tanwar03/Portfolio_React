@@ -26,15 +26,15 @@ export const about ={
 
 export const cards = [
     {
-        image: "/src/Assets/Rode_Image.png",
+        image: "./src/Assets/Rode_Image.png",
         title: "Rode Landing Page UI Clone",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit ",
         liveLink: "",
         gitLink: "",
-        icons: [Icons.HTML,"icon-[skill-icons--css]","icon-[skill-icons--tailwindcss-dark]"]
+        icons: ["icon-[skill-icons--css]","icon-[skill-icons--tailwindcss-dark]"]
     },
     {
-        image: "/src/Assets/Shopify_Image.png",
+        image: "./src/Assets/Shopify_Image.png",
         title: "Shopify Landing Page UI Clone",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit ",
         liveLink: "",
