@@ -26,7 +26,7 @@ export const about ={
 
 export const cards = [
     {
-        image: "https://imgur.com/H9wDZjF",
+        image: "https://imgur.com/H9wDZjF.png",
         title: "Rode Landing Page UI Clone",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit ",
         liveLink: "",
@@ -34,7 +34,7 @@ export const cards = [
         icons: ["icon-[skill-icons--css]","icon-[skill-icons--tailwindcss-dark]"]
     },
     {
-        image: "https://imgur.com/hix2kvH",
+        image: "https://imgur.com/hix2kvH.png",
         title: "Shopify Landing Page UI Clone",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit ",
         liveLink: "",
