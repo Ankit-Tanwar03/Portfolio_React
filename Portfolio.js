@@ -29,16 +29,16 @@ export const cards = [
         image: "https://imgur.com/H9wDZjF.png",
         title: "Rode Landing Page UI Clone",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit ",
-        liveLink: "",
-        gitLink: "",
+        liveLink: "rode-landingpage-clone.netlify.app",
+        gitLink: "https://github.com/Ankit-Tanwar03/rode-landingpage-clone",
         icons: ["icon-[skill-icons--css]","icon-[skill-icons--tailwindcss-dark]"]
     },
     {
         image: "https://imgur.com/hix2kvH.png",
         title: "Shopify Landing Page UI Clone",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisiprovident maiores debitis placeat voluptatem dolore eum sequi quosqui odit, fuga quod veniam aut excepturi earum, magnam quasi doloremque reprehenderit ",
-        liveLink: "",
-        gitLink: "",
+        liveLink: "shopify-landingpage-clone.netlify.app",
+        gitLink: "https://github.com/Ankit-Tanwar03/shopify-landingpage-clone",
         icons: ["icon-[skill-icons--html]","icon-[skill-icons--css]","icon-[skill-icons--tailwindcss-dark]"]
     },
 ];
