@@ -8,7 +8,7 @@ function About() {
       <div className="h-full flex flex-col lg:flex-row items-center justify-between px-6 lg:px-48">
         <div className="flex flex-row items-center justify-start lg:mr-10">
           <img
-            className="w-[300px] md:w-[400px] lg:w-auto"
+            className="w-[300px] md:w-[400px] lg:w-[3000px]"
             src={images.About}
             alt="About-Image"
           />

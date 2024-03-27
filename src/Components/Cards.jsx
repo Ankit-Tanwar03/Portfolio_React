@@ -6,7 +6,7 @@ function Cards({ image, title, description, liveLink, gitLink, icons }) {
       <img
         src={image}
         alt="Card Image"
-        className="w-full h-48 sm:h-56 lg:h-auto object-cover"
+        className="w-full h-48 sm:h-56 lg:h-auto object-fill"
       />
       <div className="p-4 flex flex-col justify-between flex-grow">
         <div>

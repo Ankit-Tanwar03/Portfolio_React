@@ -8,7 +8,7 @@ function Projects() {
       <h1 className="mt-[60px] text-2xl text-blue-700 font-bold mb-6">
         Explore Projects
       </h1>
-      <p className="mt-5 mb-5 text-xl text-gray-700 font-medium">
+      <p className="mt-5 mb-5 text-xl text-center text-gray-700 font-medium">
         Each Project is unique piece of development.
       </p>
       <div className="flex flex-row flex-wrap items-center justify-center px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">

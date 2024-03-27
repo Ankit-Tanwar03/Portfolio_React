@@ -19,7 +19,7 @@ function Home() {
   return (
     <div className="h-screen mt-16 lg:mt-[60px] lg:h-[calc(100vh-60px)] bg-gray-100">
       <Decoration />
-      <div className="h-full flex flex-col-reverse justify-center lg:flex-row items-center lg:justify-between  px-6 lg:px-48 z-10 relative">
+      <div className="h-full flex flex-col-reverse justify-center items-center lg:flex-row lg:justify-between px-6 lg:px-20 xl:px-44 z-10 relative">
         <div className="mb-10 lg:mb-0 lg:mr-10">
           <div>
             <h1 className="text-3xl lg:text-6xl text-gray-800 font-semibold">
@@ -29,13 +29,13 @@ function Home() {
               {homeGreetings.description}
             </p>
           </div>
-          <ul className="flex flex-row mt-4 lg:mt-10 text-2xl lg:text-4xl text-gray-900 ">
-            <li className="mr-4 lg:mr-8 hover:text-red-700 transition duration-300 ease-in-out cursor-pointer">
+          <ul className="flex flex-row justify-center mt-8 lg:mt-10 text-4xl text-gray-900  lg:justify-start">
+            <li className="mr-4 lg:mr-6 hover:text-red-700 transition duration-300 ease-in-out cursor-pointer">
               <a href={socialLinks.GitHub}>
                 <FontAwesomeIcon icon={faSquareGithub} />
               </a>
             </li>
-            <li className="mr-2 lg:mr-8 hover:text-red-700 transition duration-300 ease-in-out cursor-pointer">
+            <li className="mr-4 lg:mr-6 hover:text-red-700 transition duration-300 ease-in-out cursor-pointer">
               <a href={socialLinks.LinkedIn}>
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>

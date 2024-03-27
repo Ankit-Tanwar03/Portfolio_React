@@ -17,7 +17,7 @@ function Contact() {
         <p className="mt-4 lg:mt-8 text-lg lg:text-2xl text-gray-700 font-medium text-center lg:text-left">
           {contact.description}
         </p>
-        <ul className="flex flex-row mt-8 lg:mt-12 w-full justify-center lg:justify-start">
+        <ul className="flex flex-row mt-8 lg:mt-12 w-full justify-center lg:justify-start text-xl lg:text-3xl">
           <li className="mr-4 w-12 h-12 lg:w-16 lg:h-16 hover:text-green-800 transition duration-300 ease-in-out cursor-pointer text-gray-900">
             <span className="flex items-center justify-center h-full w-full rounded-full bg-white shadow-lg shadow-cyan-500/50 transform transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/50">
               <a href={socialLinks.GitHub} target="blank">
