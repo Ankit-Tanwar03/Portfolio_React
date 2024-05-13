@@ -138,28 +138,6 @@ function Navbar() {
           >
             Contact
           </li>
-
-          {/* <li
-            className={`text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
-              isMenuOpen ? "block mb-4" : "hidden"
-            }`}
-          >
-            About
-          </li>
-          <li
-            className={`text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
-              isMenuOpen ? "block mb-4" : "hidden"
-            }`}
-          >
-            Projects
-          </li>
-          <li
-            className={`text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
-              isMenuOpen ? "block mb-4" : "hidden"
-            }`}
-          >
-            Contact
-          </li> */}
         </ul>
       </div>
     </div>
