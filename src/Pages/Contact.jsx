@@ -9,8 +9,8 @@ import {
 
 function Contact() {
   return (
-    <div className="bg-white h-auto lg:h-[50vh]">
-      <div className="flex flex-col items-center lg:items-start justify-center lg:justify-start mt-10 lg:mt-20 px-6 lg:px-96">
+    <div className="bg-white h-full" id="Contact">
+      <div className="flex flex-col items-center lg:items-start justify-center lg:justify-start mt-10 lg:mt-20 px-6 lg:px-96 pb-20">
         <h1 className="text-2xl lg:text-4xl text-blue-700 font-bold text-center lg:text-left">
           {contact.title}
         </h1>

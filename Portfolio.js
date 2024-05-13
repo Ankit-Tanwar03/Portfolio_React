@@ -45,6 +45,6 @@ export const cards = [
 
 export const contact ={
     title:"Contact",
-    description:"Don't be shy! Hit me up! 👇",
+    description:"Let's build a community of like-minded individuals! let's connect and grow together! 👇",
 
 }

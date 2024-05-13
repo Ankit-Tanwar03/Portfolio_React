@@ -1,23 +1,26 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { homeGreetings, socialLinks, images } from "../../Portfolio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { Decoration } from "../Components";
 
 function Home() {
-  function ScrollToTop() {
-    useEffect(() => {
-      const scrollToTop = () => {
-        document.documentElement.scrollTop = 0;
-        document.scrollingElement.scrollTop = 0;
-      };
+  useEffect(() => {
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    }
 
-      scrollToTop();
-    }, []);
-  }
+    scrollToTop();
+    return () => {
+      window.removeEventListener("load", scrollToTop);
+    };
+  }, []);
 
   return (
-    <div className="h-screen mt-16 lg:mt-[60px] lg:h-[calc(100vh-60px)] bg-gray-100">
+    <div className="h-screen bg-gray-100" id="Home">
       <Decoration />
       <div className="h-full flex flex-col-reverse justify-center items-center lg:flex-row lg:justify-between px-6 lg:px-20 xl:px-44 z-10 relative">
         <div className="mb-10 lg:mb-0 lg:mr-10">
@@ -31,12 +34,12 @@ function Home() {
           </div>
           <ul className="flex flex-row justify-center mt-8 lg:mt-10 text-4xl text-gray-900  lg:justify-start">
             <li className="mr-4 lg:mr-6 hover:text-red-700 transition duration-300 ease-in-out cursor-pointer">
-              <a href={socialLinks.GitHub}>
+              <a href={socialLinks.GitHub} target="blank">
                 <FontAwesomeIcon icon={faSquareGithub} />
               </a>
             </li>
             <li className="mr-4 lg:mr-6 hover:text-red-700 transition duration-300 ease-in-out cursor-pointer">
-              <a href={socialLinks.LinkedIn}>
+              <a href={socialLinks.LinkedIn} target="blank">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>

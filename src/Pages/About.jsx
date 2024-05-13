@@ -4,7 +4,7 @@ import { about } from "../../Portfolio";
 
 function About() {
   return (
-    <div className="h-auto lg:h-[100vh] bg-white">
+    <div className="h-screen bg-white" id="About">
       <div className="h-full flex flex-col lg:flex-row items-center justify-between px-6 lg:px-48">
         <div className="flex flex-row items-center justify-start lg:mr-10">
           <img
