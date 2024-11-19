@@ -19,8 +19,6 @@ import {
   SiVite,
 } from "react-icons/si";
 
-import { Tooltip } from "react-tooltip";
-
 export const homeGreetings = {
   name: "Ankit Tanwar",
   title: "Front-End React Developer",
@@ -37,7 +35,7 @@ export const socialLinks = {
 
 export const images = {
   Profile: "https://avatars.githubusercontent.com/u/109900657?v=4",
-  About: "/src/Assets/about_image.png",
+  About: "./src/Assets/about_image.png",
 };
 
 export const about = {
