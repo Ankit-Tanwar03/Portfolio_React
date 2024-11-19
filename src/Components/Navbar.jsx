@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Logo } from "./index";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
-import { Link, NavLink } from "react-router-dom";
+
+import { FaBars } from "react-icons/fa";
+import { IoCloseSharp } from "react-icons/io5";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const [isActiveHome, setIsActiveHome] = useState(false);
   const [isActiveAbout, setIsActiveAbout] = useState(false);
   const [isActiveProjects, setIsActiveProjects] = useState(false);
@@ -63,7 +62,7 @@ function Navbar() {
         <ul
           className={`${
             isMenuOpen
-              ? "h-screen w-screen flex flex-col items-center justify-between"
+              ? "h-screen w-screen flex flex-col items-center justify-center"
               : "flex flex-row items-center space-x-1 sm:space-x-6 transition-all duration-300 ease-in-out"
           }`}
         >
@@ -74,12 +73,9 @@ function Navbar() {
             }`}
           >
             {isMenuOpen ? (
-              <FontAwesomeIcon
-                icon={faX}
-                className="absolute top-2 right-2 lg:top-10 lg:right-10"
-              />
+              <IoCloseSharp className="absolute top-10 right-10 lg:top-16 lg:right-16 text-xl" />
             ) : (
-              <FontAwesomeIcon icon={faBars} />
+              <FaBars />
             )}
           </li>
           <li
