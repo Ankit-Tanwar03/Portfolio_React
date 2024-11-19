@@ -19,18 +19,16 @@ function Home() {
   }, []);
 
   return (
-    <div className="h-screen bg-gray-800 mt-10" id="Home">
+    <div className="h-screen bg-gray-800" id="Home">
       <Decoration />
-      <div
-        className="h-full flex flex-col-reverse justify-center items-center lg:flex-row lg:justify-between px-6 lg:px-20 xl:px-44 z-10 relative border-b-[1px] border-yellow-700"
-        // style={{ "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 63%)" }}
-      >
-        <div className="mb-10 lg:mb-0 lg:mr-10">
+
+      <div className="h-full w-full flex flex-col-reverse justify-center items-center lg:flex-row lg:justify-between px-6 lg:px-20 xl:px-32 z-10 relative border-b-[1px] border-yellow-700">
+        <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
           <div>
-            <h1 className="text-3xl lg:text-6xl text-white font-semibold">
+            <h1 className="text-3xl lg:text-6xl text-blue-200 font-semibold text-center lg:text-left">
               {homeGreetings.title}
             </h1>
-            <p className="mt-4 lg:mt-10 text-lg lg:text-xl text-gray-100 font-medium">
+            <p className="mt-4 lg:mt-10 text-lg lg:text-xl text-gray-100 font-medium text-center lg:text-left">
               {homeGreetings.description}
             </p>
           </div>
@@ -47,12 +45,14 @@ function Home() {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-start rounded-full p-1 border-[2px] border-gray-400 mb-10 lg:mb-0">
-          <img
-            className="w-52 h-52 lg:w-72 lg:h-72 rounded-full object-cover"
-            src={images.Profile}
-            alt="Profile-Image"
-          />
+        <div className="lg:w-1/2 flex items-center justify-center mb-10 lg:mb-0">
+          <div className="rounded-full p-1 border-[2px] border-white">
+            <img
+              className="w-52 h-52 lg:w-72 lg:h-72 rounded-full object-cover"
+              src={images.Profile}
+              alt="Profile-Image"
+            />
+          </div>
         </div>
       </div>
     </div>

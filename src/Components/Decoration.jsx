@@ -2,7 +2,7 @@ import React from "react";
 
 function Decoration() {
   return (
-    <div className="absolute overflow-hidden top-0 left-0 w-full h-full z-0 mt-10">
+    <div className="absolute overflow-hidden top-0 left-0 w-full h-screen z-0">
       <span className="absolute h-12 w-12 sm:h-16 sm:w-16 md:h-24 md:w-24 lg:h-32 lg:w-32 border-none rounded-full top-[50px] left-[25px] sm:left-[25px] md:left-[50px] lg:left-[120px] bg-gray-500 opacity-30 backdrop-blur-md animate-pulse" />
       <span className="absolute h-12 w-12 sm:h-16 sm:w-16 md:h-24 md:w-24 lg:h-32 lg:w-32 border-none rounded-full top-[150px] right-[100px] sm:right-[150px] md:right-[550px] lg:right-[550px] bg-gray-500 opacity-30 backdrop-blur-md animate-pulse" />
       <span className="absolute h-16 w-16 sm:h-20 sm:w-20 md:h-32 md:w-32 lg:h-40 lg:w-40 border-none rounded-full top-[200px] left-[75px] sm:left-[75px] md:left-[120px] lg:left-[350px] bg-gray-500 opacity-45 backdrop-blur-md animate-pulse" />

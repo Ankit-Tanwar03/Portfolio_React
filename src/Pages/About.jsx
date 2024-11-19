@@ -1,6 +1,7 @@
 import React from "react";
 import { images } from "../../Portfolio";
 import { about } from "../../Portfolio";
+
 import {
   SiClerk,
   SiNextdotjs,
@@ -23,7 +24,7 @@ import {
 function About() {
   return (
     <div
-      className="min-h-screen h-full bg-gray-800 border-b-[1px] border-yellow-700"
+      className="min-h-screen h-full bg-gray-800 border-b-[1px] border-yellow-700 pt-5"
       id="About"
     >
       <div className=" w-full h-full flex flex-col lg:flex-row items-center justify-between p-6 lg:px-20">
@@ -35,10 +36,10 @@ function About() {
           />
         </div>
         <div className="lg:w-1/2 flex flex-col items-start justify-center lg:mt-10 mt-0 lg:ml-0">
-          <h1 className="text-2xl lg:text-3xl text-white font-bold">
+          <h1 className="text-2xl lg:text-3xl text-white font-bold text-center w-full lg:text-left">
             {about.heading}
           </h1>
-          <p className="mt-5 text-lg lg:text-xl text-blue-400 font-medium">
+          <p className="mt-5 text-lg lg:text-xl text-blue-400 font-medium ">
             {about.title}
           </p>
           <p className="mt-5  text-base lg:text-md text-gray-300">
@@ -47,7 +48,7 @@ function About() {
           <p className="mt-5 text-base lg:text-md text-gray-300">
             {about.description2}
           </p>
-          <div className="mt-10 text-xl lg:text-md text-white font-bold underline underline-offset-2">
+          <div className="mt-5 text-xl lg:text-md text-white font-bold underline underline-offset-2">
             Tech Stack
           </div>
           <div className="flex flex-row mt-5 flex-wrap gap-2">

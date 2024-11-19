@@ -24,7 +24,7 @@ function Cards({
         className="w-full  lg:w-1/2 h-48 sm:h-56 lg:h-80 object-fill rounded-3xl group-hover:scale-105 transition-all ease-in-out duration-300  z-10 "
       />
 
-      <div className="relative z-10 w-full lg:w-1/2 lg:max-h-80 p-6 bg-red-900 bg-opacity-20 backdrop-blur-md rounded-3xl group-hover:shadow-[0px_0px_100px_-40px_rgba(0,0,0,0.3)] group-hover:shadow-blue-600 transition-all ease-in-out duration-300">
+      <div className="relative z-10 w-full lg:w-1/2 lg:max-h-80 p-6 bg-red-900 bg-opacity-20 backdrop-blur-md rounded-3xl group-hover:shadow-[0px_0px_100px_-40px_rgba(0,0,0,0.3)] group-hover:shadow-blue-600 transition-all ease-in-out duration-300 border-[2px] border-yellow-500 lg:border-none">
         <div>
           <p className="text-xl font-bold text-yellow-300 mb-2">{title}</p>
           <p className="text-gray-200 mb-4">{description}</p>
@@ -39,7 +39,7 @@ function Cards({
             ))}
           </div>
         </div>
-        <div className="flex justify-start mt-4">
+        <div className="flex justify-around lg:justify-start items-center mt-8 ">
           <a
             href={liveLink}
             target="_blank"

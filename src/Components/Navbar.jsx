@@ -45,7 +45,11 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-blue-50 shadow-lg fixed top-0 left-0 right-0 z-50 py-1 px-6 lg:px-24 bg-opacity-50 backdrop-blur-md">
+    <div
+      className={`bg-gradient-to-t from-white to-gray-500 shadow-md shadow-white fixed top-0 left-0 right-0 z-50 py-1 px-6 lg:px-24 bg-opacity-60 backdrop-blur-md ${
+        isMenuOpen ? "" : "rounded-full"
+      }`}
+    >
       <div className="container mx-auto flex items-center justify-between">
         <div
           className={`${isMenuOpen ? "hidden" : "flex items-center"}`}
@@ -79,7 +83,7 @@ function Navbar() {
             )}
           </li>
           <li
-            className={`text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+            className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
               isMenuOpen ? "block mb-4" : "hidden"
             } ${isActiveHome ? "text-red-700" : "text-gray-900"}`}
             onClick={() => {
@@ -93,7 +97,7 @@ function Navbar() {
             Home
           </li>
           <li
-            className={`text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+            className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
               isMenuOpen ? "block mb-4" : "hidden"
             } ${isActiveAbout ? "text-red-700" : "text-gray-900"}`}
             onClick={() => {
@@ -107,7 +111,7 @@ function Navbar() {
             About
           </li>
           <li
-            className={`text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+            className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
               isMenuOpen ? "block mb-4" : "hidden"
             } ${isActiveProjects ? "text-red-700" : "text-gray-900"}`}
             onClick={() => {
@@ -121,7 +125,7 @@ function Navbar() {
             Projects
           </li>
           <li
-            className={`text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+            className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
               isMenuOpen ? "block mb-4" : "hidden"
             } ${isActiveContact ? "text-red-700" : "text-gray-900"}`}
             onClick={() => {
