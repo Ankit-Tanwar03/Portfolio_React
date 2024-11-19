@@ -33,7 +33,6 @@ function Navbar() {
 
     const observerCallback = (entries) => {
       entries.forEach((entry) => {
-        console.log(entry.target.id, entry.isIntersecting);
         if (entry.isIntersecting) {
           setActiveSection(entry.target.id);
         }
