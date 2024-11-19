@@ -49,7 +49,7 @@ export const about = {
 
 export const cards = [
   {
-    image: "/src/Assets/Rode_Image.png",
+    image: "./Assets/Rode_Image.png",
     title: "Rode Landing Page UI Clone",
     description:
       "The Rode Landing Page Clone is a visually appealing and responsive replica of the official Rode website's landing page. Built with modern web development tools, it showcases the brand's aesthetic and features.",
@@ -61,7 +61,7 @@ export const cards = [
     ],
   },
   {
-    image: "/src/Assets/Shopify_Image.png",
+    image: "./Assets/Shopify_Image.png",
     title: "Shopify Landing Page UI Clone",
     description:
       "This project is a Shopify Landing Page Clone, designed to replicate the core design and functionality of Shopify's official landing page. The clone is built with responsive and modern web design techniques to provide a seamless user experience across various devices.",
@@ -74,7 +74,7 @@ export const cards = [
   },
 
   {
-    image: "/src/Assets/Comet_Crypto_Coins_Image.png",
+    image: "./Assets/Comet_Crypto_Coins_Image.png",
     title: "Comet Crypto Coins",
     description:
       "Comet Crypto Coins is a sleek web application offering real-time cryptocurrency data through API integration. It features responsive layouts and intuitive navigation for tracking market trends effectively. ",
@@ -90,7 +90,7 @@ export const cards = [
   },
 
   {
-    image: "/src/Assets/Comet_Car_Rental_Image.png",
+    image: "./Assets/Comet_Car_Rental_Image.png",
     title: "Comet Car Rental",
     description:
       "Comet Car Rental is a modern web application designed for seamless car rental services. It features a user-friendly interface and responsive design, enhancing the customer experience for booking vehicles effortlessly.",
@@ -106,7 +106,7 @@ export const cards = [
   },
 
   {
-    image: "/src/Assets/Comet_Fitness_Image.png",
+    image: "./Assets/Comet_Fitness_Image.png",
     title: "Comet Fitness",
     description:
       "Comet Fitness is a dynamic web application tailored for fitness enthusiasts. It features a sleek interface and uses Appwrite for secure user authentication, providing a seamless and interactive experience.",
