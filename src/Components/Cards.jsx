@@ -39,23 +39,23 @@ function Cards({
             ))}
           </div>
         </div>
-        <div className="flex justify-around lg:justify-start items-center mt-8 ">
+        <div className="flex justify-around flex-wrap lg:justify-start items-center mt-8 text-sm gap-2">
           <a
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-red-500 bg-opacity-80 hover:bg-opacity-100 text-white font-semibold py-2 px-4 rounded-full mr-5 transition-all duration-300"
+            className=" w-36 bg-red-500 bg-opacity-80 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 ease-in-out"
           >
-            <IoIosPlayCircle className="inline mr-1 text-xl" /> Live Demo
+            <IoIosPlayCircle className="inline text-xl" /> Live Demo
           </a>
 
           <a
             href={gitLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black bg-opacity-80 hover:bg-opacity-100 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300"
+            className=" w-36 bg-black hover:bg-blue-800  text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 ease-in-out"
           >
-            <SiGithub className="inline mr-1 text-xl" /> GitHub
+            <SiGithub className="inline  text-xl" /> GitHub
           </a>
         </div>
         <Tooltip id="HTML5" content="HTML5" place="top" />

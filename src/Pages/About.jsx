@@ -24,10 +24,10 @@ import {
 function About() {
   return (
     <div
-      className="min-h-screen h-full bg-gray-800 border-b-[1px] border-yellow-700 pt-5"
+      className="min-h-screen h-full bg-gray-800 border-b-[1px] border-yellow-700 lg:pt-5"
       id="About"
     >
-      <div className=" w-full h-full flex flex-col lg:flex-row items-center justify-between p-6 lg:px-20">
+      <div className=" w-full h-full flex flex-col lg:flex-row items-center justify-between pb-10 px-6 lg:p-6 lg:px-20">
         <div className="lg:w-1/2 flex flex-row items-center justify-center">
           <img
             className="w-[300px] md:w-[400px] lg:w-[3000px]"
@@ -39,7 +39,7 @@ function About() {
           <h1 className="text-2xl lg:text-3xl text-white font-bold text-center w-full lg:text-left">
             {about.heading}
           </h1>
-          <p className="mt-5 text-lg lg:text-xl text-blue-400 font-medium ">
+          <p className="mt-5 text-lg lg:text-xl text-blue-300 font-medium ">
             {about.title}
           </p>
           <p className="mt-5  text-base lg:text-md text-gray-300">
@@ -48,7 +48,7 @@ function About() {
           <p className="mt-5 text-base lg:text-md text-gray-300">
             {about.description2}
           </p>
-          <div className="mt-5 text-xl lg:text-md text-white font-bold underline underline-offset-2">
+          <div className="mt-5 text-xl lg:text-md text-blue-300 font-bold underline underline-offset-2">
             Tech Stack
           </div>
           <div className="flex flex-row mt-5 flex-wrap gap-2">

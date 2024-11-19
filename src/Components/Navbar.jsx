@@ -15,6 +15,10 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   const handleClickHome = () => {
     Home;
     const HomeSection = document.getElementById("Home");
@@ -92,6 +96,7 @@ function Navbar() {
               setIsActiveAbout(false);
               setIsActiveProjects(false);
               setIsActiveContact(false);
+              closeMenu();
             }}
           >
             Home
@@ -106,6 +111,7 @@ function Navbar() {
               setIsActiveAbout(true);
               setIsActiveProjects(false);
               setIsActiveContact(false);
+              closeMenu();
             }}
           >
             About
@@ -120,6 +126,7 @@ function Navbar() {
               setIsActiveAbout(false);
               setIsActiveProjects(true);
               setIsActiveContact(false);
+              closeMenu();
             }}
           >
             Projects
@@ -134,6 +141,7 @@ function Navbar() {
               setIsActiveAbout(false);
               setIsActiveProjects(false);
               setIsActiveContact(true);
+              closeMenu();
             }}
           >
             Contact
