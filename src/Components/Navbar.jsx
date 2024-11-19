@@ -1,69 +1,70 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Logo } from "./index";
-
 import { FaBars } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isActiveHome, setIsActiveHome] = useState(false);
-  const [isActiveAbout, setIsActiveAbout] = useState(false);
-  const [isActiveProjects, setIsActiveProjects] = useState(false);
-  const [isActiveContact, setIsActiveContact] = useState(false);
+  const [activeSection, setActiveSection] = useState("Home");
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
-  const handleClickHome = () => {
-    Home;
-    const HomeSection = document.getElementById("Home");
-    if (Home) {
-      const scroll = HomeSection.scrollIntoView({ behavior: "smooth" });
+  const handleClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(sectionId);
+      closeMenu();
     }
   };
 
-  const handleClickAbout = () => {
-    const AboutSection = document.getElementById("About");
-    if (About) {
-      const scroll = AboutSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1, // Trigger when 10% of the section is visible
+    };
 
-  const handleClickProjects = () => {
-    const ProjectsSection = document.getElementById("Projects");
-    if (Projects) {
-      const scroll = ProjectsSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        console.log(entry.target.id, entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
 
-  const handleClickContact = () => {
-    const ContactSection = document.getElementById("Contact");
-    if (Contact) {
-      const scroll = ContactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    const sections = document.querySelectorAll(
+      "#Home, #About, #Projects, #Contact"
+    );
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   return (
     <div
-      className={`bg-gradient-to-t from-white to-gray-500 shadow-md shadow-white fixed top-0 left-0 right-0 z-50 py-1 px-6 lg:px-24 bg-opacity-60 backdrop-blur-md ${
+      className={`bg-gradient-to-t from-white to-gray-500 shadow-md shadow-white fixed top-0 left-0 right-0 z-50 py-2 px-6 lg:px-24 bg-opacity-60 backdrop-blur-md ${
         isMenuOpen ? "" : "rounded-full"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
         <div
           className={`${isMenuOpen ? "hidden" : "flex items-center"}`}
-          onClick={() => {
-            handleClickHome();
-            setIsActiveHome(true);
-            setIsActiveAbout(false);
-            setIsActiveProjects(false);
-            setIsActiveContact(false);
-          }}
+          onClick={() => handleClick("Home")}
         >
           <Logo />
         </div>
@@ -86,66 +87,19 @@ function Navbar() {
               <FaBars />
             )}
           </li>
-          <li
-            className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
-              isMenuOpen ? "block mb-4" : "hidden"
-            } ${isActiveHome ? "text-red-700" : "text-gray-900"}`}
-            onClick={() => {
-              handleClickHome();
-              setIsActiveHome(true);
-              setIsActiveAbout(false);
-              setIsActiveProjects(false);
-              setIsActiveContact(false);
-              closeMenu();
-            }}
-          >
-            Home
-          </li>
-          <li
-            className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
-              isMenuOpen ? "block mb-4" : "hidden"
-            } ${isActiveAbout ? "text-red-700" : "text-gray-900"}`}
-            onClick={() => {
-              handleClickAbout();
-              setIsActiveHome(false);
-              setIsActiveAbout(true);
-              setIsActiveProjects(false);
-              setIsActiveContact(false);
-              closeMenu();
-            }}
-          >
-            About
-          </li>
-          <li
-            className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
-              isMenuOpen ? "block mb-4" : "hidden"
-            } ${isActiveProjects ? "text-red-700" : "text-gray-900"}`}
-            onClick={() => {
-              handleClickProjects();
-              setIsActiveHome(false);
-              setIsActiveAbout(false);
-              setIsActiveProjects(true);
-              setIsActiveContact(false);
-              closeMenu();
-            }}
-          >
-            Projects
-          </li>
-          <li
-            className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
-              isMenuOpen ? "block mb-4" : "hidden"
-            } ${isActiveContact ? "text-red-700" : "text-gray-900"}`}
-            onClick={() => {
-              handleClickContact();
-              setIsActiveHome(false);
-              setIsActiveAbout(false);
-              setIsActiveProjects(false);
-              setIsActiveContact(true);
-              closeMenu();
-            }}
-          >
-            Contact
-          </li>
+          {["Home", "About", "Projects", "Contact"].map((section) => (
+            <li
+              key={section}
+              className={`text-gray-900 font-extrabold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+                isMenuOpen ? "block mb-4" : "hidden"
+              } ${
+                activeSection === section ? "text-red-700" : "text-gray-900"
+              }`}
+              onClick={() => handleClick(section)}
+            >
+              {section}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

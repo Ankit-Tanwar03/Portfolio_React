@@ -5,7 +5,7 @@ import { cards } from "../../Portfolio";
 function Projects() {
   return (
     <div
-      className="flex flex-col items-center justify-center bg-gray-800 h-full border-b-[1px] border-yellow-700 px-6"
+      className="flex min-h-screen flex-col items-center justify-center bg-gray-800 border-b-[1px] border-yellow-700 px-6"
       id="Projects"
     >
       <h1 className="mt-10 lg:mt-20 text-2xl lg:text-3xl text-white font-bold">
