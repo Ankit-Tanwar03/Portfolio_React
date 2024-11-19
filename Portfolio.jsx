@@ -35,7 +35,7 @@ export const socialLinks = {
 
 export const images = {
   Profile: "https://avatars.githubusercontent.com/u/109900657?v=4",
-  About: "./src/Assets/about_image.png",
+  About: "./Assets/about_image.png",
 };
 
 export const about = {
